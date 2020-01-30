@@ -10,7 +10,7 @@ import { Observable } from 'rxjs';
 export class ContentComponent implements OnInit {
 
   GetBestFrom2020:any=null;  
-  GetDatahighestRated: any=null;
+  GetDataPopular: any=null;
 
   Loading:Array<number>=new Array<any>()
   
@@ -25,7 +25,7 @@ export class ContentComponent implements OnInit {
   ngOnInit() 
   {
     const GetBestFrom2020 = this.$ser.GetBestFrom2020().pipe();         
-    const GetDatahighestRated = this.$ser.GetDatahighestRated().pipe();         
+    const GetDataPopular = this.$ser.GetDataPopular().pipe();         
 
     GetBestFrom2020.subscribe(
       s => 
@@ -38,10 +38,10 @@ export class ContentComponent implements OnInit {
       }        
     ); 
     
-    GetDatahighestRated.subscribe(
+    GetDataPopular.subscribe(
       s => 
       {        
-        this.GetDatahighestRated = s                
+        this.GetDataPopular = s                
       },
       error =>
       {
@@ -66,9 +66,9 @@ export class ContentComponent implements OnInit {
   {
     let Caroussel=Array<any>();
 
-    for(let i=0;i<this.GetDatahighestRated.results.length/3;i++)
+    for(let i=0;i<this.GetDataPopular.results.length/3;i++)
     {
-      Caroussel.push([this.GetDatahighestRated.results[i+2*i],this.GetDatahighestRated.results[i+1+2*i],this.GetDatahighestRated.results[i+2+2*i]]);
+      Caroussel.push([this.GetDataPopular.results[i+2*i],this.GetDataPopular.results[i+1+2*i],this.GetDataPopular.results[i+2+2*i]]);
     }
 
     return Caroussel;
