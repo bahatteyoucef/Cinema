@@ -71,7 +71,7 @@ a:hover
 {
     height: 500px;
 
-    background: url('/assets/12.jpg') no-repeat center center;
+    background: url('https://raw.githubusercontent.com/bahatteyoucef/Cinema/master/src/assets/12.jpg') no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;

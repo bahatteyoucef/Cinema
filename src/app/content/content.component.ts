@@ -1,4 +1,4 @@
-import { Component, OnInit, ɵConsole } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { MovieService } from '../services/service.service';
 import { Observable } from 'rxjs';
 
@@ -14,7 +14,6 @@ export class ContentComponent implements OnInit {
 
   Loading:Array<number>=new Array<any>()
   
-
   constructor(private $ser: MovieService) 
   { 
     for(let i=0;i<12;i++)
@@ -31,8 +30,7 @@ export class ContentComponent implements OnInit {
     GetBestFrom2020.subscribe(
       s => 
       {        
-        this.GetBestFrom2020 = s        
-        console.log(this.Carousel());
+        this.GetBestFrom2020 = s                
       },
       error =>
       {
@@ -43,8 +41,7 @@ export class ContentComponent implements OnInit {
     GetDatahighestRated.subscribe(
       s => 
       {        
-        this.GetDatahighestRated = s        
-        console.log(this.Carousel2());
+        this.GetDatahighestRated = s                
       },
       error =>
       {
