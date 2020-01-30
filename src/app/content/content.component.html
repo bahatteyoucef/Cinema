@@ -1,0 +1,167 @@
+<div class="Movies">
+	<div class="Movies-list">
+
+		<div class="List">
+			<h1 class="Movies-Header">Best of 2020</h1>
+
+				<div class="container">
+					
+					<div id="dataInfo">						
+
+						<div id="myCarousel" class="carousel slide" data-ride="carousel">
+							<div class="carousel-inner">
+
+								<div class="row Movies-Carou-inner" *ngIf="this.GetBestFrom2020!=null">
+																		
+									<div class="carousel-item" *ngFor="let item of this.Carousel();let i=index" [ngClass]="{'active': i==0}">
+										
+										<div class="row Movies-Carou">
+											
+											<div class="col-md-3 movie"  *ngIf="item[0]!=null">
+												<div class="card">								
+													
+													<a href="#">
+														<div class="card-body card-movie">
+														<div class="card-content">
+															<h5 class="card-title">{{item[0].title}}</h5>                  
+														</div>
+														</div>
+													</a>
+
+												</div>
+											</div>
+
+											<div class="col-md-3 movie" *ngIf="item[1]!=null">
+												<div class="card">								
+													
+													<a href="#">
+														<div class="card-body card-movie">
+														<div class="card-content">
+															<h5 class="card-title">{{item[1].title}}</h5>                  
+														</div>
+														</div>
+													</a>
+
+												</div>
+											</div>
+											
+											<div class="col-md-3 movie"  *ngIf="item[2]!=null">
+												<div class="card">								
+													
+													<a href="#">
+														<div class="card-body card-movie">
+														<div class="card-content">
+															<h5 class="card-title">{{item[2].title}}</h5>                  
+														</div>
+														</div>
+													</a>
+
+												</div>
+											</div>
+
+										</div>
+
+									</div>
+											
+								</div>																						
+
+							</div>
+
+							<a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							</a>
+							<a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							</a>
+						</div>
+
+					</div>
+
+				</div>
+		</div>
+		
+		<div class="List">
+			<h1 class="Movies-Header">Higest Rated</h1>
+
+				<div class="container">
+					
+					<div id="dataInfo">						
+
+						<div id="myCarousel2" class="carousel slide" data-ride="carousel">
+							<div class="carousel-inner">
+
+								<div class="row Movies-Carou-inner" *ngIf="this.GetBestFrom2020!=null">
+																		
+									<div class="carousel-item" *ngFor="let item of this.Carousel2();let i=index" [ngClass]="{'active': i==0}">
+										
+										<div class="row Movies-Carou">
+											
+											<div class="col-md-3 movie"  *ngIf="item[0]!=null">
+												<div class="card">								
+													
+													<a href="#">
+														<div class="card-body card-movie">
+														<div class="card-content">
+															<h5 class="card-title">{{item[0].title}}</h5>                  
+														</div>
+														</div>
+													</a>
+
+												</div>
+											</div>
+
+											<div class="col-md-3 movie" *ngIf="item[1]!=null">
+												<div class="card">								
+													
+													<a href="#">
+														<div class="card-body card-movie">
+														<div class="card-content">
+															<h5 class="card-title">{{item[1].title}}</h5>                  
+														</div>
+														</div>
+													</a>
+
+												</div>
+											</div>
+											
+											<div class="col-md-3 movie"  *ngIf="item[2]!=null">
+												<div class="card">								
+													
+													<a href="#">
+														<div class="card-body card-movie">
+														<div class="card-content">
+															<h5 class="card-title">{{item[2].title}}</h5>                  
+														</div>
+														</div>
+													</a>
+
+												</div>
+											</div>										
+
+										</div>
+
+									</div>
+											
+								</div>																						
+
+							</div>
+
+							<a class="carousel-control-prev" href="#myCarousel2" role="button" data-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							</a>
+							<a class="carousel-control-next" href="#myCarousel2" role="button" data-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							</a>
+						</div>
+
+					</div>
+
+				</div>
+		</div>
+
+	</div>
+</div>

@@ -1,0 +1,57 @@
+
+.Image
+{    
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    
+    background: url('/assets/14.jpg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;        
+}
+
+nav
+{
+    position:absolute;
+    top: 0;
+    left: 0;
+    right:0;
+
+    z-index: 1;
+
+    background-color: none;
+}
+
+a
+{
+    text-decoration: none;
+    color:white;
+    font-size: 16px;
+}
+
+a:hover
+{
+    color:white;
+    text-decoration:none;    
+}
+
+.nav-item
+{
+    margin-right:21px;
+    font-size:17px;
+    font-weight: bold;
+}
+
+nav span
+{
+    color:white;
+}
+
+.container
+{
+    height: 655px;
+}

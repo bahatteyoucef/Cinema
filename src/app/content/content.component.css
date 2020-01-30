@@ -1,0 +1,130 @@
+.carousel-control-next {
+    right: -10%;
+    width:90px;
+}
+.carousel-control-prev {
+    left: -10%;
+    width:90px;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    background-color: black;
+    margin-bottom:150px;
+}
+
+#myCarousel2,#myCarousel
+{
+    margin:auto;
+    width:90%;
+}
+
+/*  */
+
+a
+{    
+    color:white;
+    font-size: 16px;
+}
+
+a:hover
+{
+    color:white;
+    text-decoration: none;    
+}
+
+.Movies
+{       
+    margin-top:50px;
+    margin-bottom: 100px;
+    background-color: #f9fcfb;
+}
+
+.Movies-Header
+{
+    padding-top: 20px;    
+    padding-bottom: 50px;    
+    text-align: center;
+    text-decoration: underline #e4734f;    
+    color: black;
+    font-size: 75px;
+    letter-spacing: 7px;
+}
+
+
+.List
+{
+    padding:20px;
+    border-top: white solid 5px;
+    border-bottom: white solid 5px;
+}
+
+.card
+{    
+    background-color: #292929;
+    border: white solid 2px;
+    box-shadow: 0 10px 20px 10px;
+    margin-top:20px;       
+}
+
+.card-movie
+{
+    height: 500px;
+
+    background: url('/assets/12.jpg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+
+    border-radius: 3% 3% 3% 3%; 
+
+    color:white;     
+    
+    box-shadow: black 20px 20px 20px; 
+}
+
+.card-content
+{
+    position: relative;
+    top: 60%;
+    font-size: 13px;    
+    text-align: center;        
+}
+
+.card:hover .card-title
+{
+    font-weight: bold;
+    font-size:20px;    
+}
+
+.card:hover .card-body
+{
+    box-shadow: #e4734f 10px 20px 20px;   
+}
+
+.Loading
+{
+    height: 300px;    
+
+    background-color:white;
+      
+    border-radius: 3% 3% 3% 3%;      
+    box-shadow: black 20px 20px 20px; 
+
+    margin-bottom:20px;
+}
+
+
+/* Make the image fully responsive */
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+
+.movie
+{
+    padding-bottom:200px;
+    margin-top:200px;
+    margin:auto;
+}
